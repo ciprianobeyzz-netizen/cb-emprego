@@ -24,10 +24,15 @@ const CANDIDATO = {
   ],
   competencias: ["Marmoraria","Empilhadeira","Trabalho em Equipa","Responsabilidade","Pontualidade","Organização"],
 };const VAGAS = [
-  { id:1, titulo:"Operador de Empilhadeira", empresa:"Bellstone Angola", email:"rh@bellstone.co.ao", local:"Luanda", tipo:"Tempo Inteiro", salario:"150.000 Kz", logo:"B", cor:"#1565C0", nova:true, desc:"Procuramos operador de empilhadeira com experiência em armazém." },
-  { id:2, titulo:"Marmorista / Canteiro", empresa:"Lady Stone Angola", email:"rh@ladystone.co.ao", local:"Luanda", tipo:"Tempo Inteiro", salario:"120.000 Kz", logo:"L", cor:"#1A8C4E", nova:true, desc:"Vaga para marmorista experiente no corte e polimento de mármore." },
-  { id:3, titulo:"Operador de Armazém", empresa:"Refriango", email:"rh@refriango.co.ao", local:"Viana", tipo:"Contrato", salario:"100.000 Kz", logo:"R", cor:"#D4A017", nova:false, desc:"Operador de armazém para apoio à logística interna." },
-  { id:4, titulo:"Operador de Empilhadeira", empresa:"AGR Empreendimentos", email:"rh@agr.co.ao", local:"Luanda", tipo:"Tempo Inteiro", salario:"130.000 Kz", logo:"A", cor:"#CC0000", nova:false, desc:"Operador para carga e descarga em zona industrial." },
+const VAGAS = [
+  { id:1, titulo:"Operador de Empilhadeira", empresa:"Refriango", email:"rh@refriango.co.ao", local:"Viana — Pólo Industrial", tipo:"Tempo Inteiro", salario:"130.000 Kz", logo:"R", cor:"#1565C0", nova:true, desc:"Operador de empilhadeira para movimentação de carga em armazém de bebidas. Mínimo 1 ano de experiência." },
+  { id:2, titulo:"Marmorista / Canteiro", empresa:"Griner Angola", email:"rh@griner.co.ao", local:"Viana — ZEE", tipo:"Tempo Inteiro", salario:"120.000 Kz", logo:"G", cor:"#1A8C4E", nova:true, desc:"Marmorista experiente para obras de construção civil e reabilitação de edifícios." },
+  { id:3, titulo:"Operador de Produção", empresa:"Inovia Electrodomésticos", email:"rh@inovia.co.ao", local:"Viana — ZEE", tipo:"Tempo Inteiro", salario:"110.000 Kz", logo:"I", cor:"#6A1B9A", nova:true, desc:"Operador de linha de produção. Formação incluída." },
+  { id:4, titulo:"Operador de Armazém", empresa:"Casais Angola", email:"rh@casais.co.ao", local:"Viana — ZEE", tipo:"Contrato", salario:"100.000 Kz", logo:"C", cor:"#E65100", nova:false, desc:"Apoio logístico em grande empresa de construção com 2.400 colaboradores." },
+  { id:5, titulo:"Operador de Empilhadeira", empresa:"Nexime Technologies", email:"rh@nexime.co.ao", local:"Viana — ZEE", tipo:"Tempo Inteiro", salario:"140.000 Kz", logo:"N", cor:"#CC0000", nova:true, desc:"Empilhadeira para linha de montagem de telefones e tablets. Disponibilidade imediata." },
+  { id:6, titulo:"Auxiliar de Produção", empresa:"Yoni Ben Angola", email:"rh@yoniben.co.ao", local:"Viana — ZEE", tipo:"Contrato", salario:"90.000 Kz", logo:"Y", cor:"#D4A017", nova:false, desc:"Fábrica de massas alimentares. Turnos. Sem experiência mínima exigida." },
+  { id:7, titulo:"Operador de Máquinas", empresa:"Ninhoflex Colchões", email:"rh@ninhoflex.co.ao", local:"Viana — Pólo Industrial", tipo:"Tempo Inteiro", salario:"105.000 Kz", logo:"NH", cor:"#1565C0", nova:false, desc:"Máquinas industriais para fábrica de colchões. Experiência fabril valorizada." },
+  { id:8, titulo:"Motorista / Operador Logístico", empresa:"Kaheel Agricultura", email:"rh@kaheel.co.ao", local:"Viana — ZEE", tipo:"Tempo Inteiro", salario:"120.000 Kz", logo:"K", cor:"#1A8C4E", nova:true, desc:"Fábrica de tratores e alfaias agrícolas. Carta de condução obrigatória." },
 ];
 
 function Av({ l, cor, s=44 }) {
