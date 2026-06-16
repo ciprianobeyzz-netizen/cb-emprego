@@ -56,12 +56,24 @@ function Nav({ active, go }) {
   const [cands, setCands] = useState([]);
 
   function go(s) { setScreen(s); }
+function candidatar(vaga) {
+  if (cands.find(c=>c.id===vaga.id)) return;
+  const hoje = new Date().toLocaleDateString("pt-PT",{day:"2-digit",month:"short",year:"numeric"});
+  
+  window.emailjs.send(
+    "service_6kqr1mp",
+    "template_270jadm",
+    {
+      to_empresa: vaga.empresa,
+      vaga: vaga.titulo,
+      email: vaga.email,
+      name: "Cipriano Armando Manuel Baião",
+    },
+    "YMAG249m56LbLcVqK"
+  );
 
-  function candidatar(vaga) {
-    if (cands.find(c=>c.id===vaga.id)) return;
-    const hoje = new Date().toLocaleDateString("pt-PT",{day:"2-digit",month:"short",year:"numeric"});
-    setCands(prev=>[{id:vaga.id,titulo:vaga.titulo,empresa:vaga.empresa,email:vaga.email,cor:vaga.cor,data:hoje,estado:"Em análise"},...prev]);
-  }
+  setCands(prev=>[{id:vaga.id,titulo:vaga.titulo,empresa:vaga.empresa,email:vaga.email,cor:vaga.cor,data:hoje,estado:"Em análise"},...prev]);
+      }
 
   const main = ["vagas","candidaturas","perfil"];
 
